@@ -14,3 +14,4 @@ DROP DATABASE IF EXISTS BD1; --Eliminar BD
 CREATE DATABASE BD1; --Crear BD
 SHOW DATABASES; --Ver BD
 DESC --Descripcion  de la tabla
+-- Comando para exportar el Script: mysqldump -u Leisy -p BD1 > MYSQL/scriptExportable.sql
