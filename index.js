@@ -5,7 +5,8 @@ const actores = require('./routes/actores')
 require('dotenv').config()//Confgurar el archvo.env
 
 app.use(morgan('dev'))
-
+//Nos acepta la transmicion de objetos json del cliente(postman)
+app.use(express.json())
 //Routes
 app.use('/api', actores) //Se empiezan a cargar a la app esas rutas, se recbe el enrrutador (router)
 
